@@ -62,6 +62,48 @@ Several HRV-related variables were selected for this project due to their physio
 These physiological metrics were later used as input variables for Exploratory Data Analysis and Machine Learning classification.
 
 ---
+# Methodology
+
+The project workflow consisted of multiple stages, including data preprocessing, exploratory analysis, visualization, and Machine Learning classification.
+
+## Data Preprocessing
+
+The dataset was loaded and analyzed using Pandas within Google Colab. Basic preprocessing techniques were applied, including:
+
+- Exploration of dataset structure and variables
+- Identification of missing values and duplicates
+- Selection of physiologically relevant HRV metrics
+- Filtering and organization of stress condition labels
+
+The primary variables selected for analysis were:
+
+- Heart Rate (HR)
+- RMSSD
+- SDRR
+- LF/HF Ratio
+- pNN50
+- Total Power (TP)
+
+## Exploratory Data Analysis
+
+Exploratory Data Analysis (EDA) was performed to identify physiological patterns and differences between cognitive stress conditions.
+
+Several visualization techniques were used, including:
+
+- Boxplots
+- Violin plots
+- Correlation heatmaps
+- Statistical summaries
+
+Due to the presence of highly skewed LF/HF distributions and physiological outliers, logarithmic transformation techniques were applied to improve interpretability and visualization quality.
+
+## Machine Learning Classification
+
+A Random Forest classifier was implemented using Scikit-learn to classify physiological stress conditions based on HRV metrics.
+
+The dataset was divided into training and testing subsets using an 80/20 split. Model performance was evaluated using classification metrics generated from unseen testing data.
+
+---
 # Dataset
 
 This project uses the SWELL HRV Dataset, which contains physiological measurements collected under multiple cognitive stress conditions:
